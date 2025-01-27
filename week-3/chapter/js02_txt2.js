@@ -5,9 +5,9 @@
       Fan Trick Fine Art Photography
       Variables and functions
       Author: Dagmawi Megra
-      Date: 01/22/2025
+      Date: 01/25/2025
 
-      Filename: js02.js
+      Filename: js02_txt2.js
  */
 
 // declare global constants for the application
@@ -62,4 +62,5 @@ function getEstimate(){
   // Display the total cost estimate
   document.getElementById("estimate").innerHTML = "$" + totalCost;
 }
+
 
