@@ -10,6 +10,7 @@
 */
 const menuItems = document.getElementsByClassName("menuItem");
 
+// Adding an event listener to each menuItems element 
 for (let i=0; i<menuItems.length; i++){
   menuItems[i].addEventListener("click", calcTotal);
 
