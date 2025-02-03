@@ -7,7 +7,7 @@
       Author: Dagmawi Megra
       Date: 01/25/2025
 
-      Filename: js02_txt2.js
+      Filename: js02.js
  */
 
 // declare global constants for the application
