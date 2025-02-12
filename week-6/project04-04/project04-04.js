@@ -11,13 +11,13 @@
 */
 
 // Global variables
-let cashBox = document.getElementById("cash");
-let billBox = document.getElementById("bill");
-let changeBox = document.getElementById("change");
+let cashBox = document.getElementById("cash"); // fixed the bug here
+let billBox = document.getElementById("bill"); // fixed the bug here
+let changeBox = document.getElementById("change"); // fixed the bug here
 
 // Event handlers to be run when the cash or bill value changes
-cashBox.addEventListener("change", runTheRegister);
-billBox.addEventListener("change", runTheRegister);
+cashBox.addEventListener("change", runTheRegister); // fixed the bug here
+billBox.addEventListener("change", runTheRegister); // fixed the bug here
 
 // Function to reset the values in the web page
 function zeroTheRegister() {
@@ -37,6 +37,7 @@ function zeroTheRegister() {
 function runTheRegister() {
    zeroTheRegister();
    let changeValue = cashBox.value - billBox.value;  // calculate the change
+   //Applied the exception handling technique with the try catch statement
    try{
     if (!(changeValue >= 0))
       throw "Cash amount doesn't cover the bill";
@@ -63,7 +64,7 @@ function calcChange(changeValue) {
    // Determine the number of $5 bills
    let bill5Amt = determineCoin(changeValue, 5);
    document.getElementById("bill5").innerHTML = bill5Amt;
-   changeValue -=  bill5Amt*5;
+   changeValue -=  bill5Amt*5; // fixed the bug here
 
    // Determine the number of $1 bills
    let bill1Amt = determineCoin(changeValue, 1);
