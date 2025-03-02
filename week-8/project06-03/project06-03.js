@@ -9,9 +9,13 @@
 
       Filename: project06-03.js
 */
+
+// Add event handler to the "set billing address the same as the shipping address" button
 let useShip = document.getElementById("useShip");
 useShip.addEventListener("click", copyShippingToBilling);
 
+
+// copy the shipping detail to the billing detail
 function copyShippingToBilling(){
   if(useShip.checked){
     document.getElementById("firstnameBill").value = document.getElementById("firstnameShip").value;
